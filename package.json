@@ -1,0 +1,25 @@
+{
+  "name": "prairietest-reserve",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "build": "bun run scripts/build.ts",
+    "dev": "bun --watch run scripts/build.ts",
+    "test": "bun test",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write \"**/*.{ts,html,css,json,md}\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/chrome": "latest",
+    "eslint": "^10.0.0",
+    "globals": "^17.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.6.0",
+    "typescript-eslint": "^8.0.0"
+  }
+}
