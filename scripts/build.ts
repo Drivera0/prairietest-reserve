@@ -15,9 +15,10 @@ async function buildOnce(): Promise<void> {
   //recreate dist/
   await mkdir(DIST, { recursive: true });
 
-  //copy static assests = manifest only for now
+  //copy static assests - manifest and icons
   await cp(`${SRC}/manifest.json`, `${DIST}/manifest.json`);
-
+  await cp(`${SRC}/icons`, `${DIST}/icons`, {recursive: true});
+  
   //Entry points TS files into JS get added here as project grows
 
   const elapsed = (performance.now() - start).toFixed(0);
