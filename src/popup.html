@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>PrairieTest Auto-Reserve</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #0f1115;
+        --fg: #e6e6e6;
+        --muted: #9aa3af;
+        --accent: #0a84ff;
+        --panel: #181a20;
+        --border: #2a2d33;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        width: 380px;
+        padding: 14px 16px;
+        background: var(--bg);
+        color: var(--fg);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+        font-size: 13px;
+        line-height: 1.4;
+      }
+      h1 {
+        margin: 0 0 4px;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.2px;
+      }
+      .subtitle {
+        margin: 0 0 14px;
+        color: var(--muted);
+        font-size: 12px;
+      }
+      .panel {
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 12px;
+        margin-bottom: 10px;
+      }
+      .panel p {
+        margin: 0;
+        color: var(--muted);
+      }
+      button {
+        appearance: none;
+        font: inherit;
+        color: var(--fg);
+        background: var(--accent);
+        border: 0;
+        border-radius: 6px;
+        padding: 8px 12px;
+        cursor: pointer;
+      }
+      button:disabled {
+        background: var(--border);
+        color: var(--muted);
+        cursor: not-allowed;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>PrairieTest Auto-Reserve</h1>
+    <p class="subtitle">dev build 0.0.1</p>
+    <section class="panel" aria-labelledby="status-heading">
+      <p id="status-heading">Popup shell loaded. No behavior yet.</p>
+    </section>
+    <button id="hello" type="button" disabled>Hello (disabled)</button>
+  </body>
+</html>
