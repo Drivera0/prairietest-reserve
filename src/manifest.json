@@ -1,0 +1,9 @@
+{
+  "manifest_version": 3,
+  "name": "PrairieTest Auto-Reserve (dev)",
+  "version": "0.0.1",
+  "description": "Dev placeholder",
+  "action": {
+    "default_title": "PrairieTest Reserve"
+  }
+}
